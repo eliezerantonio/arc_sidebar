@@ -2,7 +2,7 @@
 
 by:  [Eliezer António](https://github.com/eliezerantonio/)
 
-![image](https://github.com/user-attachments/assets/img/home.png)
+![image](https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/img/home.png)
 
 ## Installation
 
