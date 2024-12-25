@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
 
 Normal Example:
 
-<img src="https://github.com/eliezerantonio/flutter_sidebar/blob/main/gifs/example.gif?raw=true" height="400">
+<img src="https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/gifs/example.gif?raw=true" height="400">
 
 ---
 
