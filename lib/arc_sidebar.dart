@@ -6,14 +6,14 @@ import 'package:rxdart/rxdart.dart';
 
 import 'components/components.dart';
 
-class FlutterSideBar extends StatefulWidget {
+class ArcSideBar extends StatefulWidget {
   final List<SideBarItem> body;
   final Color background;
   final Color sideBarIconColor;
   final Widget? header;
   final Widget? footer;
 
-  const FlutterSideBar({
+  const ArcSideBar({
     super.key,
     required this.body,
     required this.background,
@@ -26,7 +26,7 @@ class FlutterSideBar extends StatefulWidget {
   SidebarState createState() => SidebarState();
 }
 
-class SidebarState extends State<FlutterSideBar> with SingleTickerProviderStateMixin {
+class SidebarState extends State<ArcSideBar> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late StreamController<bool> isSidebarOpenedStramController;
   late Stream<bool> isSidebarOpenedStream;

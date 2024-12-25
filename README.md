@@ -1,22 +1,22 @@
-# flutter_sidebar
+# arc_sidebar
 
 by:  [Eliezer António](https://github.com/eliezerantonio/)
 
-| ![Imagem 1](https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/gifs/general.gif?raw=true) |
+| ![Imagem 1](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/general.gif?raw=true) |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 
 ## Installation
 
-Add `flutter_sidebar: ^0.0.1` to your `pubspec.yaml` dependencies. And import it:
+Add `arc_sidebar: ^0.0.1` to your `pubspec.yaml` dependencies. And import it:
 
 ```dart
-import 'package:flutter_sidebar/flutter_sidebar.dart';
+import 'package:arc_sidebar/arc_sidebar.dart';
 ```
 
 ## How to use
 
 ```dart
- FlutterSideBar(
+ ArcSideBar(
             body: [
               SideBarItem(
                 icon: Icons.play_arrow_outlined,
@@ -61,7 +61,7 @@ import 'package:flutter_sidebar/flutter_sidebar.dart';
 
 ## Preview
 
-<img src="https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/gifs/example.gif?raw=true" height="400">
+<img src="https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/example.gif?raw=true" height="400">
 
 ```dart
 
@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
       body: Stack(
         children: [
           _currentScreen[_currentIndex],
-          FlutterSideBar(
+          ArcSideBar(
             background: Colors.white,
             header: Center(
               child: Column(
@@ -148,7 +148,7 @@ class _HomeState extends State<Home> {
 
 ---
 
-### 🤝 **Contributing to FlutterSideBar**
+### 🤝 **Contributing to ArcSideBar**
 
 1. **Fork the Repository**: Create your copy.
 2. **Create a Branch**:

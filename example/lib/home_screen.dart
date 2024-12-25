@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sidebar/components/sidebar_item.dart';
-import 'package:flutter_sidebar/flutter_sidebar.dart';
+import 'package:arc_sidebar/components/sidebar_item.dart';
+import 'package:arc_sidebar/arc_sidebar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Stack(
         children: [
           _currentScreen[_currentIndex],
-          FlutterSideBar(
+          ArcSideBar(
             background: Colors.white,
             header: Center(
               child: Column(
