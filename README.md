@@ -2,7 +2,8 @@
 
 by:  [Eliezer António](https://github.com/eliezerantonio/)
 
-![image](https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/img/home.png)
+| ![Imagem 1](https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/gifs/general.gif?raw=true) |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 
 ## Installation
 
@@ -57,6 +58,10 @@ import 'package:flutter_sidebar/flutter_sidebar.dart';
  ```
 
 ## General Example
+
+## Preview
+
+<img src="https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/gifs/example.gif?raw=true" height="400">
 
 ```dart
 
@@ -140,12 +145,6 @@ class _HomeState extends State<Home> {
 }
 
   ```  
-
-## Gif
-
-Normal Example:
-
-<img src="https://github.com/eliezerantonio/flutter_sidebar/blob/main/assets/gifs/example.gif?raw=true" height="400">
 
 ---
 
