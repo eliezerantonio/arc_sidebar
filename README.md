@@ -2,6 +2,8 @@
 
 by:  [Eliezer António](https://github.com/eliezerantonio/)
 
+![image](https://github.com/user-attachments/assets/img/home.png)
+
 ## Installation
 
 Add `flutter_sidebar: ^0.0.1` to your `pubspec.yaml` dependencies. And import it:
