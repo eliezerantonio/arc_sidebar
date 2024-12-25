@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sidebar/components/sidebar_item.dart';
 import 'package:flutter_sidebar/flutter_sidebar.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   final List<Widget> _currentScreen = [
     Container(color: Colors.red, width: 500, height: 1000),

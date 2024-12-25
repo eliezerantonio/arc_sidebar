@@ -83,7 +83,7 @@ class SidebarState extends State<FlutterSideBar> with SingleTickerProviderStateM
           duration: _animationDuration,
           top: 0,
           bottom: 0,
-          left: value! ? 0 : -screenWidth,
+          left: value! ? 0 : -screenWidth - 20,
           right: value ? 0 : screenWidth - 47,
           child: Row(
             children: [
