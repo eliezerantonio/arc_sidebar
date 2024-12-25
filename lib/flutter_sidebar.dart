@@ -7,7 +7,7 @@ import 'package:rxdart/rxdart.dart';
 import 'components/components.dart';
 
 class FlutterSideBar extends StatefulWidget {
-  final List<SidebarItem> body;
+  final List<SideBarItem> body;
   final Color background;
   final Color sideBarIconColor;
   final Widget? header;
@@ -100,7 +100,7 @@ class SidebarState extends State<FlutterSideBar> with SingleTickerProviderStateM
                       children: [
                         widget.header ?? SizedBox(),
                         ...widget.body.map((item) {
-                          return SidebarItem(
+                          return SideBarItem(
                             icon: item.icon,
                             title: item.title,
                             onTap: () {
