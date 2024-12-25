@@ -7,7 +7,7 @@ by:  [Eliezer António](https://github.com/eliezerantonio/)
 
 ## Installation
 
-Add `arc_sidebar: ^0.0.1` to your `pubspec.yaml` dependencies. And import it:
+Add `arc_sidebar: ^0.0.2` to your `pubspec.yaml` dependencies. And import it:
 
 ```dart
 import 'package:arc_sidebar/arc_sidebar.dart';
