@@ -1,39 +1,172 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# flutter_sidebar
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+by:  [Eliezer António](https://github.com/eliezerantonio/)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Add `flutter_sidebar: ^0.0.1` to your `pubspec.yaml` dependencies. And import it:
 
 ```dart
-const like = 'sample';
+import 'package:flutter_sidebar/flutter_sidebar.dart';
 ```
 
-## Additional information
+## How to use
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+ FlutterSideBar(
+            body: [
+              SideBarItem(
+                icon: Icons.play_arrow_outlined,
+                title: 'Exhibition Screen',
+                onTap: (){
+
+                },
+              ),
+              SideBarItem(
+                title: 'Popular Screen',
+                icon: Icons.movie_outlined,
+               onTap: (){
+                  
+                },
+              ),
+              SideBarItem(
+                title: 'Briefly Screen',
+                icon: Icons.card_giftcard,
+               onTap: (){
+                  
+                },
+              ),
+            ],
+      
+          );
+  ```
+
+### All SliderItem parameters
+
+```dart
+
+  Key? key,
+  IconData? icon,
+  TextStyle? style,
+  Color? iconColor,
+  String title,
+  void Function()? onTap,
+  
+ ```
+
+## General Example
+
+```dart
+
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  int _currentIndex = 0;
+  final List<Widget> _currentScreen = [
+    Container(color: Colors.red, width: 500, height: 1000),
+    Container(color: Colors.purpleAccent, width: 500, height: 1000),
+    Container(color: Colors.orange, width: 500, height: 1000),
+    Container(color: Colors.greenAccent, width: 500, height: 1000),
+  ];
+  void onIconPressed(int index) async {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          _currentScreen[_currentIndex],
+          FlutterSideBar(
+            background: Colors.white,
+            header: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(height: 50),
+                  Icon(
+                    Icons.flutter_dash,
+                    size: 100,
+                    color: Colors.blueAccent,
+                  ),
+                ],
+              ),
+            ),
+            body: [
+              SideBarItem(
+                icon: Icons.play_arrow_outlined,
+                title: 'Exhibition Screen',
+                onTap: () => onIconPressed(0),
+              ),
+              SideBarItem(
+                title: 'Popular Screen',
+                icon: Icons.movie_outlined,
+                onTap: () => onIconPressed(1),
+              ),
+              SideBarItem(
+                title: 'Briefly Screen',
+                icon: Icons.card_giftcard,
+                onTap: () => onIconPressed(2),
+              ),
+            ],
+            footer: Column(
+              children: [
+                ListTile(
+                  title: Text("Dark Mode", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 17)),
+                  leading: Icon(Icons.lightbulb_outline, size: 30),
+                  trailing: Switch.adaptive(
+                    value: false,
+                    onChanged: (value) {},
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+  ```  
+
+## Gif
+
+Normal Example:
+
+<img src="https://github.com/eliezerantonio/flutter_sidebar/blob/main/gifs/example.gif?raw=true" height="400">
+
+---
+
+### 🤝 **Contributing to FlutterSideBar**
+
+1. **Fork the Repository**: Create your copy.
+2. **Create a Branch**:
+
+   ```bash
+   git checkout -b my-feature-branch
+   ```
+
+3. **Make Changes**: Implement your feature or fix.
+4. **Commit Changes**:
+
+   ```bash
+   git commit -m "Add a new feature"
+   ```
+
+5. **Push to Your Fork**:
+
+   ```bash
+   git push origin my-feature-branch
+   ```
+
+6. **Create a Pull Request**: Submit your changes for review.
