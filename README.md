@@ -2,6 +2,9 @@
 
 by:  [Eliezer António](https://github.com/eliezerantonio/)
 
+| ![Imagem 1](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/example.gif?raw=true) |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+
 | ![Imagem 1](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/general.gif?raw=true) |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 
