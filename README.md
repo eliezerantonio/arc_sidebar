@@ -7,7 +7,7 @@ by:  [Eliezer António](https://github.com/eliezerantonio/)
 
 ## Installation
 
-Add `arc_sidebar: ^0.0.2` to your `pubspec.yaml` dependencies. And import it:
+Add `arc_sidebar: ^0.0.3` to your `pubspec.yaml` dependencies. And import it:
 
 ```dart
 import 'package:arc_sidebar/arc_sidebar.dart';
@@ -81,6 +81,7 @@ class _HomeState extends State<Home> {
     Container(color: Colors.greenAccent, width: 500, height: 1000),
   ];
   void onIconPressed(int index) async {
+       if (_currentIndex == index) return; //* Prevent reconstruction of the current screen 
     setState(() {
       _currentIndex = index;
     });
