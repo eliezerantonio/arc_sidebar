@@ -29,6 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Container(color: Colors.greenAccent, width: 500, height: 1000),
   ];
   void onIconPressed(int index) async {
+    if (_currentIndex == index) return; //* Prevent reconstruction of the current screen
     setState(() {
       _currentIndex = index;
     });
