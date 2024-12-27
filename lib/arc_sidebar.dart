@@ -12,6 +12,7 @@ class ArcSideBar extends StatefulWidget {
   final Color sideBarIconColor;
   final Widget? header;
   final Widget? footer;
+  final Curve? curve;
 
   const ArcSideBar({
     super.key,
@@ -20,6 +21,7 @@ class ArcSideBar extends StatefulWidget {
     this.header = const SizedBox(),
     this.footer = const SizedBox(),
     this.sideBarIconColor = Colors.black,
+    this.curve = Curves.linear,
   });
 
   @override
@@ -92,7 +94,7 @@ class SidebarState extends State<ArcSideBar> with SingleTickerProviderStateMixin
                   duration: Duration(milliseconds: 200),
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   height: screenHeight,
-                  curve: Curves.bounceIn,
+                  curve: widget.curve!,
                   decoration: BoxDecoration(color: widget.background),
                   child: SingleChildScrollView(
                     child: Column(
