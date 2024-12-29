@@ -2,15 +2,14 @@
 
 by:  [Eliezer António](https://github.com/eliezerantonio/)
 
-| ![Imagem 1](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/example.gif?raw=true) |
-|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+<img src="https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/example.gif?raw=true" height="400">
 
 | ![Imagem 1](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/img/home.png) | ![Gif Exemplo](https://github.com/eliezerantonio/arc_sidebar/blob/main/assets/gifs/general.gif?raw=true) |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 
 ## Installation
 
-Add `arc_sidebar: ^0.0.3` to your `pubspec.yaml` dependencies. And import it:
+Add `arc_sidebar: ^0.0.4` to your `pubspec.yaml` dependencies. And import it:
 
 ```dart
 import 'package:arc_sidebar/arc_sidebar.dart';
