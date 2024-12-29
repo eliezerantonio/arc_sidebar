@@ -1,8 +1,8 @@
 name: arc_sidebar
 description: "A Sidebar/Drawer for flutter pps."
-version: 0.0.3
+version: 0.0.4
 homepage: https://eliezer-antonio-9108b.web.app/
-repository: https://pub.dev/packages/arc_sidebar
+repository: https://github.com/eliezerantonio/arc_sidebar
 
 environment:
   sdk: ^3.6.0
