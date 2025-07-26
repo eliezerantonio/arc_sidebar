@@ -34,7 +34,7 @@ class SidebarState extends State<ArcSideBar> with SingleTickerProviderStateMixin
   late Stream<bool> isSidebarOpenedStream;
   late StreamSink<bool> isSidebarOpenedSink;
   bool isSidebarOpened = true;
-  final _animationDuration = const Duration(milliseconds: 500);
+  final _animationDuration = const Duration(milliseconds: 300);
 
   @override
   void initState() {
